@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerícht</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+</head>
+<body class="bg-[#0C0B08] text-white">
+    <header class="flex justify-between px-4 py-4 md-py-8 2xl:px-[120px]">
+        <div class="max-w-[300px]">
+            <a href="" class="font-[CormorantUpright] text-3xl font-bold">
+                Gerícht
+            </a>            
+        </div>
+        <div class="block md:hidden lg:block ">
+            <ul class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 z-50">
+                <li class="px-2">
+                    <a href="" class="text-base font-semibold hover:text-cyan-500 duration-500">
+                        Home
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="" class="text-base font-semibold hover:text-cyan-500 duration-500">
+                        Pages
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="" class="text-base font-semibold hover:text-cyan-500 duration-500">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="" class="text-base font-semibold hover:text-cyan-500 duration-500">
+                        Blog
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="" class="text-base font-semibold hover:text-cyan-500 duration-500">
+                        Landing
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="z-[-1] md:opacity-100 opacity-0 flex justify-between items-center text-base font-[OpenSans] font-semibold leading-[175%]">
+            <span onclick="LogInModal()">
+                Log in / registration
+            </span>
+            <div class="w-[1px] bg-[#dedede] mx-4 h-full"></div>
+            <a href="" class="">book table</a>
+        </div>
+        <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+    </header>
+    <div class="swiper mySwiper w-full lg:pt-12px px-4 pt-4 pb-12 lg:pb-36">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">   
+            <div class="container mx-auto">
+                <div class="flex items-center flex-wrap px-4 md:px-0">
+                    <div class="w-full lg:w-2/6" >
+                        <h5 class="text-2xl font-light">Chase the new Flavour</h5>
+                        <img src="./images/Frame 17.png" alt="" class="max-w-[40px] pt-2">        
+                        <h1 class="text-8xl font-bold my-2 font-[CormorantUpright]">The key to Fine dining</h1>
+                        <p class="text-base font-medium my-4">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+                        <button class="py-2 px-8 bg-[#DCCA87] text-black font-[CormorantUpright]  mt-8 hover:bg-cyan-800 rounded">Explore Menu</button>
+                    </div>
+                    <div class="w-full lg:w-1/6"></div>
+                    <div class="w-full lg:w-3/6 md:pt-0 !pt-8 ">
+                        <img src="./images/Hero img.png" alt="" class="">
+                    </div>
+                </div>
+            </div>   
+          </div>
+          <div class="swiper-slide">   
+            <div class="container mx-auto">
+                <div class="flex items-center flex-wrap px-4 md:px-0">
+                    <div class="w-full lg:w-2/6" >
+                        <h5 class="text-2xl font-light">Chase the new Flavour</h5>
+                        <img src="./images/Frame 17.png" alt="" class="max-w-[40px] pt-2">        
+                        <h1 class="text-8xl font-bold my-2 font-[CormorantUpright]">The key to Fine dining</h1>
+                        <p class="text-base font-medium my-4">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+                        <button class="py-2 px-8 bg-[#DCCA87] text-black font-[CormorantUpright] mt-8  hover:bg-cyan-800 rounded">Explore Menu</button>
+                    </div>
+                    <div class="w-full lg:w-1/6"></div>
+                    <div class="w-full lg:w-3/6 md:pt-0 !pt-8 ">
+                        <img src="./images/Hero img.png" alt="" class="">
+                    </div>
+                </div>
+            </div>   
+          </div>
+           <!-- 
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="px-4 py-12 lg:py-32 bg-fixed relative" style="background-image: url(./images/bg.png)">
+        <div class="flex absolute items-center justify-center top-0 left-0 w-full h-full z-10">
+            <img src="./images/G.png" alt="" class="w-[391px] h-[415px]">
+        </div>
+        <div class="container mx-auto flex flex-wrap items-center relative z-50">
+        <div class="w-full lg:w-2/5 text-right">
+            <h2 class="mb-6 text-6xl text-[#DCCA87] font-semibold">About Us</h2>
+            <img src="./images/Frame 17.png" alt="" class="ml-auto origin-center rotate-180">
+            <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+            <button class="bg-[#DCCA87] text-[#0C0C0C] font-[CormorantUpright] duration-500 px-6 py-2 mt-4 hover:bg-cyan-800 rounded">Know More</button>
+        </div> 
+        <div class="w-full lg:w-1/5">
+            <img src="./images/savernake-knives.png" alt="" class="mx-auto max-h-[700px]">
+        </div>
+        <div class="w-full lg:w-2/5 text-left">
+            <h2 class="mb-6 text-6xl text-[#DCCA87] font-semibold">About Us</h2>
+            <img src="./images/Frame 17.png" alt="">
+            <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+            <button class="bg-[#DCCA87] text-[#0C0C0C] font-[CormorantUpright] duration-500 px-6 py-2 mt-4 hover:bg-cyan-800 rounded">Know More</button>
+        </div> 
+    </div> 
+    </div>
+    <!-- Today’s Special sec  -->
+    <div class="px-4 bg-[#0C0C0C] py-32">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h6>Menu that fits you palatte</h6>
+                 <img src="./images/Frame 17.png" alt="" class="max-w-[40px] pt-2 mx-auto">
+                 <h3 class="font-[CormorantUpright] text-6xl font-bold text-[#DCCA87] pt-4">Today’s Special</h3>
+            </div>
+           <div class="flex flex-wrap mt-16 items-center">
+            <div class="w-full md:w-1/3 text-left">
+                <h3 class="text-center text-5xl text-white font-semibold">
+                    Wine & Beer
+                </h3>
+                <ul class="mt-12">
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/3 text-left px-4 my-8 lg:my-0">
+                <img src="./images/Image.png" alt="">
+            </div>
+            <div class="w-full md:w-1/3 text-left">
+                <h3 class="text-center text-5xl text-white font-semibold">
+                    Wine & Beer
+                </h3>
+                <ul class="mt-12">
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                    <li class="mt-12">
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87]">Chapel Hill Shiraz</p>
+                            <p class="w-24 h-px bg-[#FAFAFA]"></p>
+                            <p>$56</p>
+                        </div>
+                        <p>AU | Bottle</p>
+                    </li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </div>
+    <!-- believe sec  -->
+     <!-- contact sec  -->
+    <div class="px-4" style="background-image: url(./images/bg.png); background-size: 95% 100%;
+     background-repeat: no-repeat;" class="py-32">
+         <div class="container mx-auto flex flex-wrap items-center">
+            <div class="w-full md:w-1/2 text-left">
+                <img src="./images/luta.png" alt="">
+            </div>
+             <div class="w-full md:w-1/2 text-left lg:pl-12 pl-4 mt-8 lg:mt-0">
+                 <h6>Chef’s Word</h6>
+                 <img src="./images/Frame 17.png" alt="" class="max-w-[40px] pt-2">
+                 <h3 class="font-[CormorantUpright] text-6xl font-bold text-[#DCCA87] pt-4">What we believe in</h3>
+                 <p class="mt-16 flex items-end">
+                    <img src="./images/qoute.png" alt="" class="w-16 pr-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .</p>
+                 <p class="mb-16">auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                 <h4 class="font-bold font-[CormorantUpright] text-4xl text-[#DCCA87] mb-4">Kevin Luo</h4>
+                 <p>Chef & Founder</p>
+                 <img src="./images/signeture.png" alt="" class="w-60 mt-16">
+             </div>
+             
+         </div>
+     </div>
+    <!-- video sec  -->
+    <div class="px-4 relative">
+        <img src="./images/video.png" alt="">
+        <div class="flex absolute w-full h-full items-center justify-center top-0 left-0 bg-[#0C0C0C] opacity-50">
+            <ion-icon name="play-circle-outline" class="text-6xl"></ion-icon>
+        </div>
+    </div>
+    <!-- Our Laurels sec  -->
+    <div style="background-image: url(./images/bg.png); background-size: 95% 100%;
+    background-repeat: no-repeat;" class="px-4 py-32 relative">
+        <img src="./images/ab.png" alt="" class="absolute left-8 top-8 w-36 h-36 z-50">
+
+        <div class="container mx-auto flex flex-wrap items-center">
+            <div class="w-full md:w-1/2 text-left">
+                <h6>Awards & recognition</h6>
+                <img src="./images/Frame 17.png" alt="" class="max-w-[40px] pt-2">
+                <h3 class="font-[CormorantUpright] text-6xl font-bold text-[#DCCA87] pt-4">Our Laurels</h3>
+                <ul class="flex justify-between flex-wrap pt-12">
+                    <li class="flex flex-wrap items-center w-1/2">
+                        <div class="w-full md:w-1/3">
+                            <img class="pr-2 lg:pr-4" src="./images/n-2.png" alt="">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h4 class="font-bold text-2xl font-[CormorantUpright] text-[#DCCA87]">
+                                Bib Gourmond
+                            </h4>
+                            <p class="text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </li>
+                    <li class="flex flex-wrap items-center w-1/2">
+                        <div class="w-full md:w-1/3">
+                            <img class="pr-2 lg:pr-4" src="./images/n-1.png" alt="">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h4 class="font-bold text-2xl font-[CormorantUpright] text-[#DCCA87]">
+                                Rising Star
+                            </h4>
+                            <p class="text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="flex justify-between flex-wrap pt-12">
+                    <li class="flex flex-wrap items-center w-1/2">
+                        <div class="w-full md:w-1/3">
+                            <img class="pr-2 lg:pr-4" src="./images/n-5.png" alt="">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h4 class="font-bold text-2xl font-[CormorantUpright] text-[#DCCA87]">
+                                AA Hospitality 
+                            </h4>
+                            <p class="text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </li>
+                    <li class="flex flex-wrap items-center w-1/2">
+                        <div class="w-full md:w-1/3">
+                            <img class="pr-2 lg:pr-4" src="./images/n-3.png" alt="">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h4 class="font-bold text-2xl font-[CormorantUpright] text-[#DCCA87]">
+                                Outstanding Chef
+                            </h4>
+                            <p class="text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 text-center lg:text-right lg:pl-12 mt-8 lg:mt-0">
+                <img src="./images/gr.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Photo Gallery sec  -->
+    <div class="px-4 md:pl-8 flex flex-wrap py-4">
+        <div class="w-full md:w-2/6 text-left">
+            <h6>Instagram</h6>
+            <img src="./images/Frame 17.png" alt="" class="max-w-[40px] pt-2">
+            <h3 class="font-[CormorantUpright] text-6xl font-bold text-[#DCCA87] pt-4">Photo Gallery</h3>
+            <p class="mt-4 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+            
+            <button class="py-2 px-8 bg-[#DCCA87] text-black">View More</button>
+        </div>
+        <div class="w-full md:w-4/6 text-left">
+            <div class="swiper gallerySwiper w-full">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide group/item">   
+                    <img class="max-h-[300px]" src="./images/1.png" alt="">
+                    <div class="group/edit flex items-center justify-center invisible hover:bg-black opacity-75 group-hover/item:visible absolute top-0 left-0 w-full h-full">
+                        <ion-icon name="logo-instagram" class="text-white text-2xl"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="swiper-slide group/item">   
+                    <img class="max-h-[300px]" src="./images/2.png" alt="">
+                    <div class="group/edit flex items-center justify-center invisible hover:bg-black opacity-75 group-hover/item:visible absolute top-0 left-0 w-full h-full">
+                        <ion-icon name="logo-instagram" class="text-white text-2xl"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="swiper-slide group/item">   
+                    <img class="max-h-[300px]" src="./images/3.png" alt="">
+                    <div class="group/edit flex items-center justify-center invisible hover:bg-black opacity-75 group-hover/item:visible absolute top-0 left-0 w-full h-full">
+                        <ion-icon name="logo-instagram" class="text-white text-2xl"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="swiper-slide group/item">   
+                    <img class="max-h-[300px]" src="./images/4.png" alt="">
+                    <div class="group/edit flex items-center justify-center invisible hover:bg-black opacity-75 group-hover/item:visible absolute top-0 left-0 w-full h-full">
+                        <ion-icon name="logo-instagram" class="text-white text-2xl"></ion-icon>
+                    </div>
+                  </div> 
+                  <div class="swiper-slide group/item">   
+                    <img class="max-h-[300px]" src="./images/1.png" alt="">
+                    <div class="group/edit flex items-center justify-center invisible hover:bg-black opacity-75 group-hover/item:visible absolute top-0 left-0 w-full h-full">
+                        <ion-icon name="logo-instagram" class="text-white text-2xl"></ion-icon>
+                    </div>
+                  </div>                                 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </div>
+    <!-- contact sec  -->
+    <div style="background-image: url(./images/bg.png); background-size: 95% 100%;
+    background-repeat: no-repeat;" class="px-4 py-32">
+        <div class="container mx-auto flex flex-wrap items-center">
+            <div class="w-full md:w-1/2 text-left">
+                <h6>Contact</h6>
+                <img src="./images/Frame 17.png" alt="" class="max-w-[40px] pt-2">
+                <h3 class="font-[CormorantUpright] text-6xl font-bold text-[#DCCA87] pt-4">Find Us</h3>
+                <p class="mt-16 mb-8">Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
+                <h4 class="font-bold font-[CormorantUpright] text-2xl text-[#DCCA87] mb-4">Opening Hours</h4>
+                <p>Mon - Fri: 10:00 am - 02:00 am</p>
+                <p>Sat - Sun: 10:00 am - 03:00 am</p>
+            </div>
+            <div class="w-full md:w-1/2 text-right mt-8 lg:mt-0">
+                <img src="./images/img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter sec  -->
+    <div class="px-4 bg-[#0C0C0C] py-16 text-center">
+        <div class="text-center max-w-3xl mx-auto">
+            <h6>Newsletter</h6>
+            <img src="./images/Frame 17.png" alt="" class="mx-auto max-w-[40px] pt-2">
+            <h3 class="font-[CormorantUpright] text-6xl font-bold pb-8 text-[#DCCA87] pt-4">Subscribe to Our Newsletter</h3>
+            <p>And never miss latest Updates!</p>
+            <div class="pt-16 flex justify-between">
+                <input type="text" placeholder="Email Address" class="border border-[#F5EFDB] w-full mr-8 bg-transparent px-4 py-2">
+                <button class="py-2 px-8 bg-[#DCCA87] text-black">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer sec  -->
+    <div class="py-12 lg:py-32" style="background-image: url(./images/bg.png)">
+        <div class="container mx-auto flex flex-wrap">
+        <div class="w-full md:w-1/4 text-center">
+            <h3 class="font-[CormorantUpright] font-normal text-2xl text-[#F5EFDB] pb-8">Contact Us</h3>
+            <p class="pb-4">9 W 53rd St, New York, NY 10019, USA</p>
+            <a href="tel:+1 212-344-1230">
+                +1 212-344-1230
+            </a> <br>
+            <a href="tel:+1 212-555-1230">
+                +1 212-555-1230
+            </a>
+        </div>
+        <div class="w-full md:w-2/4 text-center">
+            <a href="" class="font-[CormorantUpright] text-6xl font-bold pb-8 text-[#DCCA87] block">
+                Gerícht
+            </a>  
+            <p class="pb-4 max-w-sm mx-auto">"The best way to find yourself is to lose yourself in the service of others.”</p>
+            <img src="./images/Frame 17.png" alt="" class="mx-auto max-w-[40px]">
+            <ul class="flex justify-center pt-4">
+                <li class="px-2">
+                    <a href="" class="text-xl">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="" class="text-xl">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="" class="text-xl">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full md:w-1/4 text-center">
+            <h3 class="font-[CormorantUpright] font-normal text-2xl text-[#F5EFDB] pb-8">Working Hours</h3>
+            <p class="pb-4">Monday-Friday: <br>
+                08:00 am -12:00 am</p>
+            <p>Saturday-Sunday: <br>
+                07:00am -11:00 pm</p>
+        </div>
+        <div class="text-center p-4 pt-8 lg:pt-16 w-full">
+            <p class="font-[OpenSans] text-base">2021 Gerícht. All Rights reserved.</p>
+        </div>
+        </div>        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<style>
+    
+</style>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var gallerySwiper = new Swiper(".gallerySwiper", {
+    spaceBetween: 30,
+    slidesPerView: 4,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      centeredSlides: false,
+      slidesPerGroupSkip: 1,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 4,
+          slidesPerGroup: 2,
+        },
+      },
+    //   scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //   },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+  
+</script>
+<script>
+    function Menu(e){
+        alert('test1') 
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100') , list.classList.add('bg-[#fff]'), list.classList.add('!text-black')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+    
+</script>
+</body>
+</html>
